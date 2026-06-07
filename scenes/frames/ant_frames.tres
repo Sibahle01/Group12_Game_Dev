@@ -1,0 +1,58 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b0antfr0001a"]
+
+[ext_resource type="Texture2D" uid="uid://c305vhlbj30b3" path="res://assets/sprites/Ants.png" id="t1"]
+
+[sub_resource type="AtlasTexture" id="atlas1"]
+atlas = ExtResource("t1")
+region = Rect2(0, 288, 90, 96)
+
+[sub_resource type="AtlasTexture" id="atlas2"]
+atlas = ExtResource("t1")
+region = Rect2(90, 288, 90, 96)
+
+[sub_resource type="AtlasTexture" id="atlas3"]
+atlas = ExtResource("t1")
+region = Rect2(180, 288, 90, 96)
+
+[sub_resource type="AtlasTexture" id="atlas4"]
+atlas = ExtResource("t1")
+region = Rect2(0, 480, 90, 96)
+
+[sub_resource type="AtlasTexture" id="atlas5"]
+atlas = ExtResource("t1")
+region = Rect2(90, 480, 90, 96)
+
+[sub_resource type="AtlasTexture" id="atlas6"]
+atlas = ExtResource("t1")
+region = Rect2(180, 480, 90, 96)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("atlas1")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas2")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas3")
+}],
+"loop": true,
+"name": &"move",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("atlas4")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas5")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas6")
+}],
+"loop": false,
+"name": &"squashed",
+"speed": 6.0
+}]

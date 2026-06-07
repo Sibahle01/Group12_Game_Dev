@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dejof20d4833i"]
+
+[ext_resource type="Script" uid="uid://cjr41m7qauads" path="res://scripts/server.gd" id="1_m3u1i"]
+[ext_resource type="Texture2D" uid="uid://djbderuhyhekk" path="res://assets/sprites/server.png" id="2_ja7sr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u84ik"]
+size = Vector2(101, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m3u1i"]
+size = Vector2(101, 105)
+
+[node name="Server" type="Area2D" unique_id=561282038]
+script = ExtResource("1_m3u1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2009037703]
+position = Vector2(51.5, 57.5)
+shape = SubResource("RectangleShape2D_u84ik")
+
+[node name="Server" type="Sprite2D" parent="." unique_id=241045003]
+position = Vector2(51.000015, 57)
+scale = Vector2(0.051284786, 0.056884766)
+texture = ExtResource("2_ja7sr")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1945881976]
+offset_left = 20.0
+offset_top = -15.0
+offset_right = 77.0
+offset_bottom = 12.0
+metadata/_edit_use_anchors_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1839025953]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1495585669]
+position = Vector2(51.5, 57.5)
+shape = SubResource("RectangleShape2D_m3u1i")
+
+[node name="NameLabel" type="Label" parent="." unique_id=1373134242]
+offset_left = 16.0
+offset_top = -38.0
+offset_right = 80.0
+offset_bottom = -15.0

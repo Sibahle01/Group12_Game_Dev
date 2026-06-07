@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b0bugmrn001a"]
+
+[ext_resource type="Texture2D" uid="uid://cuhlqb87i3uva" path="res://assets/sprites/Bugs.png" id="t1"]
+
+[sub_resource type="AtlasTexture" id="atlas1"]
+atlas = ExtResource("t1")
+region = Rect2(810, 0, 90, 96)
+
+[sub_resource type="AtlasTexture" id="atlas2"]
+atlas = ExtResource("t1")
+region = Rect2(900, 0, 90, 96)
+
+[sub_resource type="AtlasTexture" id="atlas3"]
+atlas = ExtResource("t1")
+region = Rect2(990, 0, 90, 96)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("atlas1")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas2")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas3")
+}],
+"loop": true,
+"name": &"move",
+"speed": 6.0
+}]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dcy3ejxagq7aj"]
+
+[ext_resource type="Script" uid="uid://cu8rx1c36ccih" path="res://scripts/firewall.gd" id="1_6a1qj"]
+[ext_resource type="Texture2D" uid="uid://dt1xf0gwpc5t4" path="res://assets/sprites/firewall2.png" id="2_1am1r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1am1r"]
+radius = 70.0928
+
+[node name="Firewall" type="Area2D" unique_id=752917248]
+script = ExtResource("1_6a1qj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1047395190]
+
+[node name="Firewall2" type="Sprite2D" parent="StaticBody2D" unique_id=627376882]
+position = Vector2(39.000004, 52)
+scale = Vector2(0.12988281, 0.1376953)
+texture = ExtResource("2_1am1r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1175264311]
+position = Vector2(39, 54)
+shape = SubResource("CircleShape2D_1am1r")
+
+[node name="LifeTimer" type="Timer" parent="." unique_id=615880659]

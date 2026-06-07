@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cs14qa8ik3ovn"]
+
+[ext_resource type="PackedScene" uid="uid://dvb4ma1eql0id" path="res://scenes/player.tscn" id="1_bw3m6"]
+[ext_resource type="PackedScene" uid="uid://db3h15gbqbtri" path="res://scenes/bug.tscn" id="2_6614m"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_6614m"]
+a = Vector2(-264, 89)
+b = Vector2(884, 91)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bhu08"]
+a = Vector2(-8, -220)
+b = Vector2(-2, 250)
+
+[node name="MainLevel" type="Node2D" unique_id=537721342]
+
+[node name="Player" parent="." unique_id=2121413766 instance=ExtResource("1_bw3m6")]
+position = Vector2(26, -25)
+
+[node name="Bug" parent="." unique_id=62724871 instance=ExtResource("2_6614m")]
+position = Vector2(484, 274)
+
+[node name="Bug4" parent="." unique_id=375215939 instance=ExtResource("2_6614m")]
+position = Vector2(288, 262)
+
+[node name="Bug2" parent="." unique_id=1277829850 instance=ExtResource("2_6614m")]
+position = Vector2(601, 148)
+
+[node name="Bug3" parent="." unique_id=442739826 instance=ExtResource("2_6614m")]
+position = Vector2(366, 136)
+
+[node name="Walls" type="StaticBody2D" parent="." unique_id=775262780]
+position = Vector2(31, 155)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls" unique_id=1078730103]
+position = Vector2(284, -293)
+shape = SubResource("SegmentShape2D_6614m")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls" unique_id=177783038]
+position = Vector2(294, 154)
+shape = SubResource("SegmentShape2D_6614m")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls" unique_id=715343600]
+position = Vector2(38, -10)
+shape = SubResource("SegmentShape2D_bhu08")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls" unique_id=2030105255]
+position = Vector2(1180, 11)
+shape = SubResource("SegmentShape2D_bhu08")
+

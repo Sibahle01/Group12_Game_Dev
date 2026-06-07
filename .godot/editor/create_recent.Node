@@ -1,0 +1,14 @@
+Timer
+CollisionShape2D
+Sprite2D
+Area2D
+TextureRect
+HBoxContainer
+ColorRect
+StaticBody2D
+TileMap
+AnimatedSprite2D
+Label
+Node2D
+TileMapLayer
+ProgressBar
